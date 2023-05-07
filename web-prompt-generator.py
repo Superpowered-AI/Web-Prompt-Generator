@@ -2,7 +2,7 @@ from duckpy import Client
 client = Client()
 while True:
     try:
-        prompt = input("You: ")
+        prompt = input("Main prompt:")
         if prompt == '':
             continue
         results = client.search(str(prompt))
